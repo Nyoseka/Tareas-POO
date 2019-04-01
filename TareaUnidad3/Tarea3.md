@@ -11,8 +11,8 @@
 
 **5. Escribe el programa de Figura como vimos en clase, donde agregues varios tipos de figuras a una lista y recorre la lista llamando a un metodo de las figuras, además :**
 
-    5.1 Se sobrecarguen los constructores y se acceda a los constructores de la clase base
+*5.1 Se sobrecarguen los constructores y se acceda a los constructores de la clase base*
 
-    5.2 Explica para que nos sirve la palabra base
+*5.2 Explica para que nos sirve la palabra base*
 
-    5.3  Haz el método Dibuja() que sea virtual y redefinelo en solo una de las clases derivadas.
+*5.3  Haz el método Dibuja() que sea virtual y redefinelo en solo una de las clases derivadas.*

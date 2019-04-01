@@ -45,9 +45,9 @@ class B:A
 
   // #########################################
 
-  //  #  Después de contestar la pregunta 1                  
+*#  Después de contestar la pregunta 1*              
 
- //   #  Redefine el método Display( ) en este espacio,  debe regresar el campo b como string.
+*#  Redefine el método Display( ) en este espacio,  debe regresar el campo b como string.*
 
  //  #########################################
 
@@ -74,12 +74,17 @@ class B:A
   }
 
 *1.1. ¿Qué valores imprimen las lineas (1) y (2)?*
+ObjA: 10
+ObjB: 10
 
 *1.2.  Redefine el método Display en el espacio indicado,*
 
 *una vez redefinido el método, ¿qué valores imprimen las lineas (1) y (2)?.*
+ObjA: 10
+ObjB: 15
 
 *1.3. ¿Que palabra debes agregar en la linea (public _______ string Display()) al definir A.Display()?*
+override
 
 **2. Considera el siguiente fragmento de programa:**
 

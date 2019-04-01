@@ -20,6 +20,19 @@ namespace Dibujo
             this.poX=poX;
             this.poY;
         }
+        public virtual void Dibuja()
+        {
+            Console.WriteLine("Figura de color {0} en la posición: ({1},{2})",color,poX,poY);
+        }
+    }
+    class Rectangulo:Figura
+    {
+        string alto;
+        string ancho;
+        public Rectangulo(string color, int poX, int poY):base(color,poX,poY)
+        {
+            
+        }
     }
     class Program
     {

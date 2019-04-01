@@ -24,5 +24,6 @@ En c# y .NET no se permite la herencia múltiple, pero se puede lograr algo simi
 *5.1 Se sobrecarguen los constructores y se acceda a los constructores de la clase base*
 
 *5.2 Explica para que nos sirve la palabra base*
+Sirve para llamar a los atributos de la clase que se está heredando.
 
 *5.3  Haz el método Dibuja() que sea virtual y redefinelo en solo una de las clases derivadas.*

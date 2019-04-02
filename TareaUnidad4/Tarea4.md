@@ -191,7 +191,7 @@ class Program
 *2.1. Completa el programa.*
 
 *2.2. Hay un error en uno de los puntos (A)(B)(C)(D). ¿Cuál es y por qué?*
-Falta colocar la palabra abstract en los métodos, además de colocar punto y coma para poder redefinirlos más adelante.
+Falta colocar la palabra abstract en los métodos, además de colocar punto y coma para poder redefinirlos más adelante. Otro error que se tiene es que no se puede crear objetos a través de clases abstractas.
 
 *2.3. ¿Qué método se debe implementar obligatoriamente en ambas clases y por qué?*
 

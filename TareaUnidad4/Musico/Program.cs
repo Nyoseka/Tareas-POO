@@ -4,16 +4,6 @@ using System.Collections.Generic;
 namespace Musico
 {
  /* 
-    public _________ Afina()
-
-      {
-
-      ________________
-
-      }
-
- }
-
 class Guitarrista ____________
 
      {
@@ -76,7 +66,10 @@ class Program
             nombre=n;
             instrumento=i;
         }
-        
+        public virtual string Afina(string a)
+        {
+            return a= string.Format("*afina su instrumento*");
+        }
     }
     class Program
     {

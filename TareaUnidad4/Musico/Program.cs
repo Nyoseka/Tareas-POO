@@ -3,29 +3,6 @@ using System.Collections.Generic;
 
 namespace Musico
 {
- /* 
-  Musico [] m = ____________________
-
-  m[0] = b;
-
-  m[1] = g;
-
- 
-
-  foreach ( ___________)
-
-       _____________________
-
- 
-
- Console.ReadKey();
-
-  
-
- }
-
-} */
-
     abstract class Musico
     {
         public string nombre;
@@ -49,7 +26,7 @@ namespace Musico
         }
         public override void Afina()
         {
-            Console.WriteLine("*afina bajo*")
+            Console.WriteLine("*afina bajo*");
         }
         public override string Display()
         {
@@ -59,7 +36,7 @@ namespace Musico
     class Guitarrista:Musico
     {
         public string instrumento;
-        public Guitarrista(string n, string i):base(nombre)
+        public Guitarrista(string nombre, string instrumento):base(nombre)
         {
             nombre=n;
             instrumento=i;
@@ -77,9 +54,15 @@ namespace Musico
     {
         static void Main(string[] args)
         {
-            List<Musico> musicos=new <List>();
+            List<Musico> musicos=new List<Musico>();
             Bajista b = new Bajista("Flea");
             Guitarrista g = new Guitarrista("Santana");
+            musicos.Add(b);
+            musicos.Add(g);
+            foreach (var m in musicos)
+            {
+                musicos.Display(m);
+            }
         }
     }
 }

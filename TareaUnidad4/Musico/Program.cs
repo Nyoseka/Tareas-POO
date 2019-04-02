@@ -4,26 +4,6 @@ using System.Collections.Generic;
 namespace Musico
 {
  /* 
-   public (C) string Display()
-
-      { 
-
-       return nombre;
-
-      }
-
-   }
-
-class Bajista; Musico
-
-  {
-
-    public string instrumento;
-
-    public Bajista (string n, string i ) ......
-
-    .........
-
     public _________ Afina()
 
       {
@@ -86,7 +66,17 @@ class Program
             nombre=n;
         }
         public abstract void Afina();
-        public abstract string Display()
+        public abstract string Display();
+    }
+    class Bajista:Musico
+    {
+        public string instrumento;
+        public Musico(string n, string i)
+        {
+            nombre=n;
+            instrumento=i;
+        }
+        
     }
     class Program
     {

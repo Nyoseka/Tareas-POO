@@ -195,9 +195,12 @@ Falta colocar la palabra abstract en los métodos, además de colocar punto y co
 
 *2.3. ¿Qué método se debe implementar obligatoriamente en ambas clases y por qué?*
 
+
 *2.4. ¿Por qué no se ponen las llaves en (B)?, ¿Cuando si se pondrían?*
+Porque se trata de un método abstracto, se pondrían llaves en caso de que sea un método virtual
 
 *2.5. ¿Qué pasa si el método Afina() lo hacemos virtual en lugar de abstract?*
+Tendría diferentes redefiniciones, además de no tener una línea por defaulkt
 
 **3. Implementa el programa utilizando interfaces en lugar de herencia.**
 

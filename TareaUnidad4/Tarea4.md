@@ -191,6 +191,7 @@ class Program
 *2.1. Completa el programa.*
 
 *2.2. Hay un error en uno de los puntos (A)(B)(C)(D). ¿Cuál es y por qué?*
+Falta colocar la palabra abstract en los métodos, además de colocar punto y coma para poder redefinirlos más adelante.
 
 *2.3. ¿Qué método se debe implementar obligatoriamente en ambas clases y por qué?*
 

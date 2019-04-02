@@ -4,22 +4,6 @@ using System.Collections.Generic;
 namespace Musico
 {
  /* 
-class Guitarrista ____________
-
-     {
-
-     public instrumento;
-
-      // Falta el constructor y otras cosas??
-
- 
-
-     }
-class Program
-
- {
-  public static Main()
-   {
   Musico m = new Musico("Django"); (D)
 
   Bajista b = new Bajista("Flea");
@@ -56,12 +40,15 @@ class Program
             nombre=n;
         }
         public abstract void Afina();
-        public abstract string Display();
+        public virtual string Display()
+        {
+            return n;
+        }
     }
     class Bajista:Musico
     {
         public string instrumento;
-        public Musico(string n, string i)
+        public Bajista(string n, string i):base(nombre)
         {
             nombre=n;
             instrumento=i;
@@ -69,6 +56,14 @@ class Program
         public virtual string Afina(string a)
         {
             return a= string.Format("*afina su instrumento*");
+        }
+    }
+    class Guitarrista:Musico
+    {
+        public string instrumento;
+        public Guitarrista:base(nombre)
+        {
+
         }
     }
     class Program

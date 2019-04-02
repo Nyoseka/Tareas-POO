@@ -4,12 +4,6 @@ using System.Collections.Generic;
 namespace Musico
 {
  /* 
-  Musico m = new Musico("Django"); (D)
-
-  Bajista b = new Bajista("Flea");
-
-  Guitarrista g = new Guitarrista("Santana");
-
   Musico [] m = ____________________
 
   m[0] = b;
@@ -53,9 +47,13 @@ namespace Musico
             nombre=n;
             instrumento=i;
         }
-        public override string Afina()
+        public override void Afina()
         {
-            
+            Console.WriteLine("*afina bajo*")
+        }
+        public override string Display()
+        {
+            return n;
         }
     }
     class Guitarrista:Musico
@@ -66,12 +64,22 @@ namespace Musico
             nombre=n;
             instrumento=i;
         }
+        public override void Afina()
+        {
+            Console.WriteLine("*afina guitarra*");
+        }
+        public override string Display()
+        {
+            return n;
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Musico> musicos=new <List>();
+            Bajista b = new Bajista("Flea");
+            Guitarrista g = new Guitarrista("Santana");
         }
     }
 }

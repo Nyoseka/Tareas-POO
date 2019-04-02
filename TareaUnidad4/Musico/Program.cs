@@ -53,9 +53,9 @@ namespace Musico
             nombre=n;
             instrumento=i;
         }
-        public override string Afina(string a)
+        public override string Afina()
         {
-            return a= string.Format("*afina su instrumento*");
+            
         }
     }
     class Guitarrista:Musico

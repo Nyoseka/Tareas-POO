@@ -194,7 +194,7 @@ class Program
 Falta colocar la palabra abstract en los métodos, además de colocar punto y coma para poder redefinirlos más adelante. Otro error que se tiene es que no se puede crear objetos a través de clases abstractas.
 
 *2.3. ¿Qué método se debe implementar obligatoriamente en ambas clases y por qué?*
-
+Afina porque es abstracto y basicamente es obligatorio, también puede decir que Display si se define como
 
 *2.4. ¿Por qué no se ponen las llaves en (B)?, ¿Cuando si se pondrían?*
 Porque se trata de un método abstracto, se pondrían llaves en caso de que sea un método virtual

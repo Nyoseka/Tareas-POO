@@ -53,7 +53,7 @@ namespace Musico
             nombre=n;
             instrumento=i;
         }
-        public virtual string Afina(string a)
+        public override string Afina(string a)
         {
             return a= string.Format("*afina su instrumento*");
         }
@@ -61,9 +61,10 @@ namespace Musico
     class Guitarrista:Musico
     {
         public string instrumento;
-        public Guitarrista:base(nombre)
+        public Guitarrista(string n, string i):base(nombre)
         {
-
+            nombre=n;
+            instrumento=i;
         }
     }
     class Program

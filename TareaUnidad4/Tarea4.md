@@ -200,7 +200,7 @@ Afina porque es abstracto y basicamente es obligatorio, también puede ser Displ
 Porque se trata de un método abstracto, se pondrían llaves en caso de que sea un método virtual
 
 *2.5. ¿Qué pasa si el método Afina() lo hacemos virtual en lugar de abstract?*
-Tendría diferentes redefiniciones, además de no tener una línea por defaulkt
+Tendría diferentes redefiniciones, además de no tener una línea por default
 
 **3. Implementa el programa utilizando interfaces en lugar de herencia.**
 

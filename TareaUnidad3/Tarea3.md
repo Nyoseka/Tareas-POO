@@ -10,6 +10,7 @@ Es la clase que hereda todos sus miembros: Atributos, métodos, etc.
 Es la clase que hereda los miembros de la clase base.
 
 **2.  Haz un diagrama UML donde se muestre la relación de herencia entre las  clases Figura, Recangulo y Circulo como vimos en clase.**
+![Imgur](https://i.imgur.com/fCzezvs.jpg)
 
 **3. Indica cuales son las clases base y las derivadas.**
 

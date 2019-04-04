@@ -1,20 +1,29 @@
 ﻿using System;
 
 namespace Interfaces
-{/*    abstract class Musico
+{
+    interface IAfinable
+    {
+        public void Afina();
+    }
+    class Musico:IAfinable
     {
         public string nombre;
         public Musico(string n)
         {
             nombre=n;
         }
-        public abstract void Afina();
+        public override void Afina()
+        {
+            Console.WriteLine("*afina instrumento*");
+        }
         public virtual string Display()
         {
             return n;
         }
     }
-    class Bajista:Musico
+
+    class Bajista:Musico,IAfinable
     {
         public string instrumento;
         public Bajista(string n, string i):base(nombre)
@@ -31,7 +40,7 @@ namespace Interfaces
             return n;
         }
     }
-    class Guitarrista:Musico
+    class Guitarrista:Musico,IAfinable
     {
         public string instrumento;
         public Guitarrista(string nombre, string instrumento):base(nombre)
@@ -48,12 +57,10 @@ namespace Interfaces
             return n;
         }
     }
-     */
     class Program
     {
         static void Main(string[] args)
         {
-            /*
             List<Musico> musicos=new List<Musico>();
             Bajista b = new Bajista("Flea");
             Guitarrista g = new Guitarrista("Santana");
@@ -63,7 +70,6 @@ namespace Interfaces
             {
                 musicos.Display(m);
             }
-             */
         }
     }
 }

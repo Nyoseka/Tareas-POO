@@ -1,10 +1,14 @@
-﻿using System;
+using System;
 
 namespace Interfaces
 {
     interface IAfinable
     {
-        public void Afina();
+        void Afina();
+    }
+    interface IDisplay
+    {
+        string Display();
     }
     class Musico:IAfinable
     {
@@ -13,13 +17,13 @@ namespace Interfaces
         {
             nombre=n;
         }
-        public override void Afina()
+        public override void Afina() 
         {
             Console.WriteLine("*afina instrumento*");
         }
-        public virtual string Display()
+        public override string Display()
         {
-            return n;
+            return nombre;
         }
     }
 
@@ -37,7 +41,7 @@ namespace Interfaces
         }
         public override string Display()
         {
-            return n;
+            return nombre;
         }
     }
     class Guitarrista:Musico,IAfinable
@@ -54,7 +58,7 @@ namespace Interfaces
         }
         public override string Display()
         {
-            return n;
+            return nombre;
         }
     }
     class Program
@@ -72,4 +76,3 @@ namespace Interfaces
             }
         }
     }
-}

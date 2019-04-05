@@ -1,22 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 
-namespace Musico
+namespace Interfaces
 {
-    abstract class Musico
+    interface IAfinable
+    {
+        void Afina();
+    }
+    class Musico:IAfinable
     {
         public string nombre;
         public Musico(string n)
         {
             nombre=n;
         }
-        public abstract void Afina();
+        public void Afina()
+        {
+            Console.WriteLine("afina el instrumento");
+        }
         public virtual string Display()
         {
-            return n;
+            return nombre;
         }
     }
-    class Bajista:Musico
+
+    class Bajista:Musico,IAfinable
     {
         public string instrumento;
         public Bajista(string n, string i):base(nombre)
@@ -26,14 +33,14 @@ namespace Musico
         }
         public override void Afina()
         {
-            Console.WriteLine("*afina bajo*");
+            Console.WriteLine("afina bajo");
         }
         public override string Display()
         {
-            return n;
+            return nombre;
         }
     }
-    class Guitarrista:Musico
+    class Guitarrista:Musico,IAfinable
     {
         public string instrumento;
         public Guitarrista(string nombre, string instrumento):base(nombre)
@@ -43,11 +50,11 @@ namespace Musico
         }
         public override void Afina()
         {
-            Console.WriteLine("*afina guitarra*");
+            Console.WriteLine("afina guitarra");
         }
         public override string Display()
         {
-            return n;
+            return nombre;
         }
     }
     class Program

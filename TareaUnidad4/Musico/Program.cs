@@ -1,52 +1,54 @@
 using System;
+using System.Collections.Generic;
 
-namespace Interfaces
+namespace Musico
 {
-    interface IAfinable
-    {
-        void Afina();
-    }
-    class Musico
+    abstract class Musico
     {
         public string nombre;
-        public Musico(string n)
+        public Musico(string nombre)
         {
-            nombre=n;
+            this.nombre=nombre;
         }
-        public virtual string Display()
-        {
-            return nombre;
-        }
+        public abstract void Afina();
+        public abstract string Display();
     }
-
-    class Bajista:Musico,IAfinable
+    class Bajista:Musico
     {
         public string instrumento;
-        public Bajista(string n, string i):base(nombre)
+        public Bajista(string nombre):base(nombre)
         {
-            nombre=n;
+            this.nombre=nombre;
+        }
+        public Bajista(string nombre, string i):base(nombre)
+        {
+            this.nombre=nombre;
             instrumento=i;
         }
         public override void Afina()
         {
-            Console.WriteLine("afina bajo");
+            Console.WriteLine("*afina bajo*");
         }
         public override string Display()
         {
             return nombre;
         }
     }
-    class Guitarrista:Musico,IAfinable
+    class Guitarrista:Musico
     {
         public string instrumento;
+        public Guitarrista(string nombre):base(nombre)
+        {
+            this.nombre=nombre;
+        }
         public Guitarrista(string nombre, string instrumento):base(nombre)
         {
-            nombre=n;
-            instrumento=i;
+            this.nombre=nombre;
+            this.instrumento=instrumento;
         }
         public override void Afina()
         {
-            Console.WriteLine("afina guitarra");
+            Console.WriteLine("*afina guitarra*");
         }
         public override string Display()
         {
@@ -57,15 +59,14 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
-            List<Musico> musicos=new List<Musico>();
             Bajista b = new Bajista("Flea");
             Guitarrista g = new Guitarrista("Santana");
+            List<Musico> musicos=new List<Musico>();
             musicos.Add(b);
             musicos.Add(g);
-            foreach (var m in musicos)
+            foreach (var Musico in musicos)
             {
-                (musicos as IAfinable).Afina(m);
-                musicos.Display(m);
+                musicos.Display();
             }
         }
     }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Interfaces
 {
@@ -6,22 +6,14 @@ namespace Interfaces
     {
         void Afina();
     }
-    interface IDisplay
-    {
-        string Display();
-    }
-    class Musico:IAfinable
+    class Musico
     {
         public string nombre;
         public Musico(string n)
         {
             nombre=n;
         }
-        public override void Afina() 
-        {
-            Console.WriteLine("*afina instrumento*");
-        }
-        public override string Display()
+        public virtual string Display()
         {
             return nombre;
         }
@@ -37,7 +29,7 @@ namespace Interfaces
         }
         public override void Afina()
         {
-            Console.WriteLine("*afina bajo*");
+            Console.WriteLine("afina bajo");
         }
         public override string Display()
         {
@@ -54,7 +46,7 @@ namespace Interfaces
         }
         public override void Afina()
         {
-            Console.WriteLine("*afina guitarra*");
+            Console.WriteLine("afina guitarra");
         }
         public override string Display()
         {
@@ -72,7 +64,9 @@ namespace Interfaces
             musicos.Add(g);
             foreach (var m in musicos)
             {
+                (musicos as IAfinable).Afina(m);
                 musicos.Display(m);
             }
         }
     }
+}

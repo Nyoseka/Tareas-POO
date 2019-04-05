@@ -6,16 +6,12 @@ namespace Interfaces
     {
         void Afina();
     }
-    class Musico:IAfinable
+    class Musico
     {
         public string nombre;
         public Musico(string n)
         {
             nombre=n;
-        }
-        public void Afina()
-        {
-            Console.WriteLine("afina el instrumento");
         }
         public virtual string Display()
         {
@@ -68,6 +64,7 @@ namespace Interfaces
             musicos.Add(g);
             foreach (var m in musicos)
             {
+                (musicos as IAfinable).Afina(m);
                 musicos.Display(m);
             }
         }
